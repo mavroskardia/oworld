@@ -1,0 +1,7 @@
+need to go through source code and determine what is being used and what
+isn't. 
+
+consistent naming scheme. camelCase not_this_style or ThisStyle (except for
+classes)
+
+_

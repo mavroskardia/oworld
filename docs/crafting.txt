@@ -1,0 +1,60 @@
+Overworld Crafting
+
+Three components:
+	- Template 
+		- defines:
+			- number of materials required to construct item
+			- level required to make item
+	- Material 
+		- defines:
+			- number of enhancements
+			- durability (attack score, defense score, etc derived from this)
+			- value
+	- Enhancement
+		- defines:
+			- modifiers to durability and value
+	
+Example Weapon:
+
+	Pine-handled Grass Dagger:
+	(namimg based on materials, but also enhancements?)
+
+	Template (Dagger):
+		- blade (level 1)
+		- handle (level 1)
+	Materials:
+		- grass (durability+0, value+1)
+		- pine wood (durability+1, value+2, level 1)
+	Enhancements:
+		- sawdust (durability+1, value+0, level 1)
+		- banana peel (durability+0, value+0, level 1)
+		
+	Result:	
+		Grass Dagger
+			Value: 3
+			Durability: 2
+			Level Required: 1 (no components required higher than level 1)
+			Notes: Banana peel wrapped around handle, sawdust mixed into grass blade.
+
+Example Armor:
+
+	Template (Plate Armor):
+		- breastplate (level 5)
+		- pauldron x2 (level 7)
+	Materials:
+		- bag of bottle caps (value+2, durability+3, level 3)
+		- iron skillet (value+3, durability+5, level 4)
+		- glass bottle (x3) (value+2, durability+2, level 3)
+	Enhancements:
+		- none (shouldn't have to use enhancements)
+		- spraypaint (value+1, durability+0, level 1)
+		- railroad tie (value+1, durability+2, level 3)
+	
+	Result:
+		Bottlecap Plate Armor
+			Value: 9
+			Durability: 12
+			Level required: 7 (based on pauldrons)
+			Notes: 	Bottlecap chain-linked breastplate with one shoulder pauldron made 
+					from iron saucepan and the other made from melted down glass mixed
+					with railroad tie spike sticking out perpendicularly.

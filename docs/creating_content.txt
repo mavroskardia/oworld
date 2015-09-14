@@ -1,0 +1,68 @@
+Creating Content for Overworld $Revision$
+
+Creating Map Tiles
+	Map tiles come in a two different flavors: base tiles and roof tiles.
+	
+	Base Tiles 
+		These serve as the "bottom layer" tile, the tile that is going 
+		to serve as the ground in that area of the map. Grass is a 
+		common base tile, as is dirt. Also included in base tiles are 
+		the 'embellishment' tiles, such as flowers, road signs, etc.
+		
+	Roof Tiles
+		These tiles are drawn on top of the actors in a scene and are 
+		therefore most suited as roofs or overhead effects like s
+		talagtites, clouds, etc.
+		
+	Before creating any tiles, decide what size the tiles will be for the 
+	scene. Once the size is decided upon, stick with multiples of that size
+	for all tiles in that scene (but tile sizes can vary between scenes, if
+	desired).  Tiles do not have to be square, but it tends to be much 
+	easier to draw maps that are. Any image format that SDL_image supports 
+	is acceptable as a filetype, but the recommended type is PNG since it 
+	supports compression and alpha masks.  
+
+	Once the image is created, add it to the desired tileset.
+
+Creating Tilesets, Spritesets, and Scriptsets
+	
+	Overworld will automatically generate tilesets, spritesets, and 
+	scriptsets based upon the contents of the "tilesets", "spritesets", 
+	and "scripts" subdirectories of the data directory, respectively.  
+	For example, to make a new tileset called "castle", make a subdirectory
+	of the "tilesets" directory called "castle" and put the desired tiles 
+	in that new directory.  The next time Overworld runs, it will recognize
+	that there are new tilesets and generate the necessary files.  The same
+	concept applies to spritesets and scripts.
+	
+Creating Sprites
+	Sprites are the animated actors in scenes. They represent the player 
+	characters, monsters, and non-player characters.  They can be any size,
+	but it is recommended that an average size is decided upon (unless, for
+	example, a monster is much larger for dramatic effect).
+	
+	To make a sprite, first determine how many frames of animation in each 
+	direction the sprite will have.  Then, when the sprite's frames are 
+	completed, they must be assembled into a spriteset.
+	
+Creating Spritesets
+	Sprite images must be named according to the direction and order of 
+	animation.  For example, if a sprite has two frames of animation in 
+	each direction, it will have the following eight filenames:
+
+		e1.png, e2.png; n1.png, n2.png; s1.png, s2.png; w1.png, w2.png
+	
+	Which can be broken down as:
+
+		e*: east-facing frames (right)
+		n*: north-facing frames (up) 
+		s*: south-facing frames (down)
+		w*: west-facing frames (left)
+
+Creating Items
+	<todo>
+
+
+Creating Scenes
+	<todo>
+	

@@ -1,0 +1,17 @@
+Overworld Requirements
+
+Linux
+
+	Python	- http://www.python.org/
+	SDL		- http://www.libsdl.org/
+	Pygame	- http://www.pygame.org/
+
+Mac
+
+	Python	- http://www.pythonmac.org/packages/py24-fat/index.html
+	Pygame	- http://www.pythonmac.org/packages/py24-fat/index.html
+	PyObjC	- http://www.pythonmac.org/packages/py24-fat/index.html
+
+Windows
+
+	Pygame	- http://www.pygame.org/
